@@ -1,5 +1,5 @@
 # Final Project Music 
-### User Story 
+## User Story 
 
 ### Index
 
@@ -43,3 +43,30 @@
 #### The user can enter their name and comment
 
 ![wireframe](./app/assets/images/comment-form.png)
+
+
+## Tables
+
+### Plugin.                       
+ 
+ | id    |   name        |   year  |  creator     | Description | Type id | src(video/audio) | Direct Link |
+ |------:|--------------:|--------:|-------------:|-----------: |--------:| ----------------:| -----------:|
+ |   1   |  nexus refx   | 2003    | reFx         | blah blahbl |  1&2    | http//           | http//      |
+ |   2   |  tone 2       | 2012    | reFx         | blah blahbl |  1&3    | http//           | http//      |
+ |   3   |  omnisphere 2 | 2017    | Spectrasonics| blah blahbl |  1&3    | http//           | http//      |
+
+ ### Comments
+
+ | id |   comment | plugin id   | 
+ |----|:---------:|------------:| 
+ |  1 | good      |     1       |
+ |  2 | great     |     2       |
+ |  3 | yahh      |     3       |
+
+ ### Types
+
+ | id |  Type |
+ |----|------:|
+ |  1 | All   |
+ |  2 | Free  |
+ |  3 | Top   |
