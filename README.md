@@ -1,24 +1,7 @@
-# README
+# Final Project Music 
+### User Story 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Index
+#### When the page loads, the user will see a welcome hero, a nav bar, and a menu of different plugins lists; free plugins, top plugins, and all plugin
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![wireframe](./app/assets/images/index.png)
