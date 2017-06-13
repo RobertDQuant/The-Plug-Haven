@@ -1,7 +1,23 @@
 <h1> New Plugin</h1>
 
 
-<%= form_for :plugin do |f| %>
+<%= form_for @plugins_path do |f| %>
+
+  <% if @plugin.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize (@plugin.errors.count, "error") %>
+prohibited
+      this article from being saved:
+      </h2>
+      <ul>
+        <% @plugin.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :title %>
@@ -36,3 +52,5 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= link_to 'Back', plugins_path %>

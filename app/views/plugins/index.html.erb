@@ -1,0 +1,27 @@
+
+<h1>Listing plugin</h1>
+ <%= link_to 'New Plugin', new_plugin_path %>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Year</th>
+    <th>Creator</th>
+    <th>Description</th>
+    <th>Src</th>
+    <th>Direct_Link</th>
+    <th></th>
+  </tr>
+ 
+  <% @plugins.each do |plugin| %>
+    <tr>
+      <td><%= plugin.name %></td>
+      <td><%= plugin.year %></td>
+      <td><%= plugin.creator %></td>
+      <td><%= plugin.description %></td>
+      <td><%= plugin.src %></td>
+      <td><%= plugin.direct_link %></td>
+      <td><%= link_to 'Show', plugin_path(plugin) %></td>
+    </tr>
+  <% end %>
+</table>
