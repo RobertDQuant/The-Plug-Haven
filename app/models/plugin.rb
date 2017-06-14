@@ -1,4 +1,4 @@
 class Plugin < ApplicationRecord
-   validates :title, presence: true,
+   validates :name, presence: true,
                     length: { minimum: 4 }
 end
