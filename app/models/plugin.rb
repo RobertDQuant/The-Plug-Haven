@@ -1,2 +1,2 @@
-class Article < ApplicationRecord
+class Plugin < ApplicationRecord
 end

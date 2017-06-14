@@ -14,11 +14,11 @@ class PluginsController < ApplicationController
     @plugin = Plugin.new(plugin_params)
 
     @plugin.save
-      redirect_to @plugin
+    redirect_to @plugin
   end
 
   private
   def plugin_params
-    params.require(:plugin).permit(:name, :year, :creator, :description, :src)
+    params.require(:plugin).permit(:name, :year, :creator, :description, :src, :direct_link)
   end
 end

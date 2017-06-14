@@ -1,41 +1,25 @@
 <h1> New Plugin</h1>
 
 
-<%= form_for @plugins_path do |f| %>
-
-  <% if @plugin.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize (@plugin.errors.count, "error") %>
-prohibited
-      this article from being saved:
-      </h2>
-      <ul>
-        <% @plugin.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%= form_for :plugin, url: plugins_path do |f| %>
   <p>
     <%= f.label :name %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :name %>
   </p>
 
   <p>
     <%= f.label :year %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :year %>
   </p>
 
   <p>
     <%= f.label :creator %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :creator %>
   </p>
 
   <p>
     <%= f.label :description %><br>
-    <%= f.text_area :text %>
+    <%= f.text_area :description %>
   </p>
   
   <p>
