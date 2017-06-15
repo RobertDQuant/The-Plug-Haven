@@ -10,6 +10,7 @@
     <th>Description</th>
     <th>Src</th>
     <th>Direct_Link</th>
+    <th>Type</th>
     <th colspan="3">Show/Edit/Delete</th>
   </tr>
  
@@ -21,6 +22,7 @@
       <td><%= plugin.description %></td>
       <td><%= plugin.src %></td>
       <td><%= plugin.direct_link %></td>
+      <td><%= plugin.type %></td>
       <td><%= link_to 'Show', plugin_path(plugin) %></td>
       <td><%= link_to 'Edit', edit_plugin_path(plugin) %></td>
       <td><%= link_to 'Destroy', plugin_path(plugin),

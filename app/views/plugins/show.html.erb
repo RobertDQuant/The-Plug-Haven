@@ -28,5 +28,16 @@
   <%= @plugin.direct_link %>
 </p>
 
+<p>
+  <strong>Type:</strong>
+  <%= @plugin.type %>
+</p>
+
+<h2>Comments</h2>
+<%= render @plugin.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
 <%= link_to 'Edit', edit_plugin_path(@plugin) %> |
 <%= link_to 'Back', plugins_path %>
