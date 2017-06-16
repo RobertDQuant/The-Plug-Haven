@@ -44,6 +44,6 @@ def index
 
   private
   def plugin_params
-    params.require(:plugin).permit(:name, :year, :creator, :description, :src, :direct_link)
+    params.require(:plugin).permit(:name, :year, :creator, :description, :src, :direct_link, :category)
   end
 end
