@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615202938) do
+ActiveRecord::Schema.define(version: 20170615225045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,8 +33,7 @@ ActiveRecord::Schema.define(version: 20170615202938) do
     t.string "direct_link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "type_id"
-    t.index ["type_id"], name: "index_plugins_on_type_id"
+    t.string "category"
   end
 
   create_table "types", force: :cascade do |t|

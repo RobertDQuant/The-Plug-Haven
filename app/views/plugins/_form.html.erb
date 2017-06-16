@@ -44,6 +44,10 @@
     <%= f.text_field :direct_link %>
   </p>
 
+<%= f.radio_button :category, 'top', :checked => true %>
+<%= label :category, 'Top' %>
+<%= f.radio_button :category, 'free', :checked => false %>
+<%= label :category, 'Free' %>
 
   <p>
     <%= f.submit %>
