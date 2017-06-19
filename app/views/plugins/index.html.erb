@@ -1,7 +1,9 @@
 <%= render 'nav' %>
-
-<h1>Listing plugin</h1>
+<div ="bg">
+<h1>All The Plugins</h1>
+<div class="button">
  <%= link_to 'New Plugin', new_plugin_path %>
+ </div>
 <br>
  <div class="tt">
 <table>
@@ -18,7 +20,7 @@
     <tr>
       <td><%= plugin.name %></td>
       <td><%= plugin.creator %></td>
-      <td><img src="<%= plugin.src %>" alt="plugin's picture" class="pluginPic"></td>
+      <td><a href="<%= plugin.direct_link %>"><img src="<%= plugin.src %>" alt="plugin's picture" class="pluginPic"></a></td>
       <td><a href="<%= plugin.direct_link %>">Plugin Link</a></td>
       <td><%= plugin.category %></td>
       <td><%= link_to 'Show', plugin_path(plugin) %></td>
@@ -29,4 +31,5 @@
     </tr>
   <% end %>
 </table>
+</div>
 </div>

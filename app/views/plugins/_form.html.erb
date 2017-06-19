@@ -13,33 +13,33 @@
       </ul>
     </div>
   <% end %>
-  
-  <p>
+  <div class="form">
+  <p class="formp">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </p>
 
-  <p>
+  <p class="formp">
     <%= f.label :year %><br>
     <%= f.text_field :year %>
   </p>
 
-  <p>
+  <p class="formp">
     <%= f.label :creator %><br>
     <%= f.text_field :creator %>
   </p>
 
-  <p>
+  <p class="formp">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </p>
   
-  <p>
-    <%= f.label :src %><br>
+  <p class="formp">
+    <%= f.label :image_link %><br>
     <%= f.text_field :src %>
   </p>
 
-  <p>
+  <p class="formp">
     <%= f.label :direct_link %><br>
     <%= f.text_field :direct_link %>
   </p>
@@ -54,3 +54,4 @@
   </p>
 
 <% end %>
+</div>

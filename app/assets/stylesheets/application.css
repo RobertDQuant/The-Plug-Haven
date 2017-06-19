@@ -15,7 +15,6 @@
  */
             
             body {
-                background: white;
                 margin: 0 auto;
                 text-align: center;
                 color: black;
@@ -55,6 +54,9 @@
                 border-spacing: 0;
                 width: 80%;
                 border: 1px solid #ddd;
+                -webkit-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
             }
             
             td {
@@ -135,4 +137,18 @@
             
             a:hover {
                 color: red;
+            }
+            
+            .form {
+                padding: 20px;
+                width: 50%;
+                margin: 0 auto;
+                border: 1px solid black;
+                -webkit-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+            }
+            
+            .formp {
+                padding: 10px;
             }
