@@ -7,9 +7,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Year</th>
     <th>Creator</th>
-    <th>Description</th>
     <th>Src</th>
     <th>Direct_Link</th>
     <th>Category</th>
@@ -19,11 +17,9 @@
   <% @plugins.each do |plugin| %>
     <tr>
       <td><%= plugin.name %></td>
-      <td><%= plugin.year %></td>
       <td><%= plugin.creator %></td>
-      <td><%= plugin.description %></td>
-      <td><%= plugin.src %></td>
-      <td><%= plugin.direct_link %></td>
+      <td><img src="<%= plugin.src %>" alt="plugin's picture" class="pluginPic"></td>
+      <td><a href="<%= plugin.direct_link %>">Plugin Link</a></td>
       <td><%= plugin.category %></td>
       <td><%= link_to 'Show', plugin_path(plugin) %></td>
       <td><%= link_to 'Edit', edit_plugin_path(plugin) %></td>
