@@ -152,3 +152,19 @@
             .formp {
                 padding: 10px;
             }
+            
+            .back {
+                padding: 20px;
+                width: 10%;
+                margin: 0 auto;
+                border-radius: 20px;
+                transition: .2s;
+                border-left: solid 1px black;
+                border-right: solid 1px black;
+            }
+            
+            .back:hover {
+                -webkit-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: -1px 11px 21px 0px rgba(0, 0, 0, 0.75);
+            }
